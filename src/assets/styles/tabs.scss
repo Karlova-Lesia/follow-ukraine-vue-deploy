@@ -1,0 +1,128 @@
+.tabs-wrapper {
+  width: 100%;
+  margin: 50px 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .tab {
+    width: 140px;
+    height: 40px;
+    background-color: #B2E3F2;
+    border: none;
+    font-size: 14px;
+
+    &.active, &:hover {
+      background-color: #FAE28C;
+    }
+
+    @media (max-width: 650px) {
+      width: 100px;
+      height: 35px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 415px) {
+      width: 75px;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    margin: 70px 0;
+  }
+
+  @media (max-width: 415px) {
+    margin: 50px 0;
+  }
+}
+
+.tabs-content-wrapper {
+  margin-bottom: 80px;
+
+  .tab-content {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 100px;
+    list-style: none;
+
+    &-item {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-bottom: 100px;
+
+      img {
+        width: 300px;
+        height: 300px;
+        margin-right: 60px;
+
+        @media (max-width: 690px) {
+          width: 200px;
+          height: 200px;
+          margin-right: 40px;
+        }
+
+        @media (max-width: 490px) {
+          width: 150px;
+          height: 150px;
+          margin-right: 20px;
+        }
+      }
+
+      div {
+        font-family: Zen Kurenaido, sans-serif;
+        line-height: 25px;
+
+        .tabs-content-title {
+          font-size: 16px;
+          font-weight: 400;
+
+          @media (max-width: 690px) {
+            font-size: 14px;
+            line-height: 15px;
+          }
+        }
+
+        .tabs-content-address, .tabs-content-description {
+          font-size: 14px;
+          font-weight: 300;
+
+          @media (max-width: 690px) {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+
+      @media (max-width: 1600px) {
+        justify-content: flex-start;
+        margin-bottom: 60px;
+      }
+
+      @media (max-width: 1300px) {
+        margin: 40px auto;
+      }
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    @media (max-width: 1600px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 1300px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+  }
+}
