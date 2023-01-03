@@ -2,9 +2,7 @@
   "name": "follow-ukraine-vue",
   "type": "module",
   "version": "0.0.0",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
