@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 import MountainsView from '@/views/MountainsView.vue';
 import ArchitectureView from '@/views/ArchitectureView.vue';
@@ -9,7 +9,7 @@ import AttractionView from '@/views/AttractionView.vue';
 import PropositionsView from '@/views/PropositionsView.vue';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',

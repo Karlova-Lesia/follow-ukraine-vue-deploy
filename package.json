@@ -1,14 +1,14 @@
 {
   "name": "follow-ukraine-vue",
-  "type": "module",
   "version": "0.0.0",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.mjs",
     "dev": "vite",
-    "build": "run-p type-check build-only",
-    "preview": "vite preview --port 4173",
+    "build": "vite build",
+    "preview": "vite --port $PORT",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
+    "heroku-postinstall": "npm install && npm run build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
