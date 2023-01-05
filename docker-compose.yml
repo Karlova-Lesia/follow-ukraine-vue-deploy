@@ -22,7 +22,7 @@ services:
     restart: always
     volumes:
       - .:/app
-    command: "node server.mjs"
+    command: "node server.js"
 volumes:
   node_modules:
   dist:
