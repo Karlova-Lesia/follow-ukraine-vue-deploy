@@ -10,7 +10,6 @@
     "preview": "vite --port $PORT",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "postinstall": "npm install express",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
